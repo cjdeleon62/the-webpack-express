@@ -3,7 +3,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlInlineCSSWebpackPlugin = require('html-inline-css-webpack-plugin').default;
 const webpackAssets = require('./webpack.assets');
 
-console.log('here it is', webpackAssets.generateHTMLConfig());
 module.exports = {
   mode: 'none',
   entry: {
