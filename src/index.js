@@ -1,5 +1,5 @@
 import './index.scss';
 
-const message = 'Hello World!';
+const message = 'Hello World Today!';
 
 document.querySelector('.message').innerHTML = message;

@@ -1,3 +1,4 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const htmlRoutes = [
@@ -18,6 +19,7 @@ const generateHTMLConfig = () => (
       filename: `${route.name}.html`,
       chunks: ['runtime', `${route.name}`],
       template: `src/${route.path}`,
+      hash: true,
     })
   ))
 );
