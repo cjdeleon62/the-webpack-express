@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist/*",
     "build:dev": "npm run clean && webpack --config webpack.config.js",
-    "start:dev": "webpack-dev-server -d",
     "server:dev": "npm run clean && concurrently \"webpack -d -w\" \"nodemon --watch server server/index.js\"",
     "lint": "eslint *.js src/**/*.js",
     "puglint": "pug-lint src/**/*.pug"
@@ -42,7 +41,6 @@
     "pug": "^2.0.4",
     "pug-lint": "^2.6.0",
     "pug-loader": "^2.4.0",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-cli": "^3.3.10"
   }
 }
