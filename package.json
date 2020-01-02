@@ -8,6 +8,7 @@
     "clean": "rm -rf dist/*",
     "build:dev": "npm run clean && webpack --config webpack.config.js",
     "start:dev": "webpack-dev-server -d",
+    "server:dev": "webpack -d && nodemon server/index.js",
     "lint": "eslint *.js src/**/*.js",
     "puglint": "pug-lint src/**/*.pug"
   },
@@ -36,6 +37,7 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.19.1",
+    "nodemon": "^2.0.2",
     "pug": "^2.0.4",
     "pug-lint": "^2.6.0",
     "pug-loader": "^2.4.0",
